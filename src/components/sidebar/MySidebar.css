@@ -1,0 +1,95 @@
+.sidebar{
+
+    display:grid;
+    grid-template-rows: 10rem 1fr 10rem;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+
+.sidebar__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 10rem;
+}
+
+.sidebar__header img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.sidebar__menu{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    background-color: var(--white-color);
+}
+
+.sidebar__menu__item{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--font-color);
+}
+
+.sidebar__menu__item:hover{
+    background-color: var(--sidebar-over) !important;
+}
+
+.sidebar__menu__item__icon{
+    margin-right: 0.5rem;
+}
+
+.sidebar__menu__item__icon svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.sidebar__menu__item__name{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--font-color);
+}
+
+.sidebar__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+.sidebar__footer p{
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.sidebar__footer__button{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar__footer__button:hover{
+    opacity: 0.8;
+}

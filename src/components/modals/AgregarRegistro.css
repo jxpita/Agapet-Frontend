@@ -1,0 +1,81 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal__content {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-areas: 
+      "title title"
+      "form form"
+      "buttons buttons";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+    overflow-y:scroll;
+  }
+
+  .modal__content h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    grid-area: title;
+  }
+  
+  .modal__content__form {
+    display: flex;
+    flex-direction: column;
+    grid-area: form;
+  }
+
+  .modal__content__form__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+  }
+
+  .modal__content__form__close:hover{
+    color: var(--secondary-color);
+  }
+
+  .modal__content__form button{
+    margin-top: 1rem;;
+  }
+
+  .btn__form__location{
+    grid-area: buttons;
+  }
+
+  

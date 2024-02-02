@@ -1,0 +1,20 @@
+.display-flex{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding:2rem;
+}
+
+.display-flex__header__actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.display-flex__header__actions button:hover{
+    opacity: 0.8;
+}
+
